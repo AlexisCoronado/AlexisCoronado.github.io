@@ -1,14 +1,55 @@
 body {
+    height: 100vh;
+    width: 100vw;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #49243E;
     color: #BB8493;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+skills{
+
+}
+
 
 .container {
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
+}
+.container .skillBox{
+    width: 100%;
+    margin: 25px 0;
+}
+.skillBox .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.skillBox .skillBar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: #5e1949e5;
+}
+.skillBar .skillPer{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background-color: #704264;
+}
+.skillPer .tooltip{
+    position: absolute;
+    right: -14px;
+    font-weight: 500;
+    top: -26px;
+    border-radius: 6px;
+    color: #bf97a2;
+    background-color: #704264;
 }
 
 header {
