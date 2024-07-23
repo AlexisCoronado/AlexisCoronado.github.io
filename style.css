@@ -11,20 +11,31 @@ body {
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-.container {
-    width: 100%;
-    margin: 0;  
+.container2{
+    margin: 0;
 }
 .container1 {
-    margin: 1.8%;  
+    margin: 0;  
     text-align: center;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    width: 99%;
 }
 .container1 p {
   font-size: 1.3sem;
 }
-header, nav, main, footer {
-    padding: 20px 0;
-    margin: 0;
+.container{
+    margin: 0;  
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.container p{
+    font-size: 1em;
+    font-weight: 500;
 }
 header {
     background-color: #BB8493;
@@ -32,15 +43,15 @@ header {
     padding: 20px 0;
     text-align: center;
     height: 30%;
-    margin-top: 2%;
+    margin-top: .8%;
 }
 
 header h1 {
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 3.5em;
 }
 
-header p {
+header .container p {
     margin: 10px 0 0;
     font-size: 2em;
 }
@@ -75,15 +86,13 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.1em;
 }
+nav ul li a:hover {
+    color: #ff8fe1;
+}
 
 main {
     padding: 40px 0;
 }
-
-section {
-    margin-bottom: 40px;
-}
-
 section h2 {
     border-bottom: 2px solid #BB8493;
     padding-bottom: 10px;
@@ -93,17 +102,20 @@ section h2 {
 .project-gallery {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     justify-content: center;
 }
 .project-item {
-    background-color: #49243E;
+    background-color: rgba(31, 31, 31, 0.514);
     border: 1px solid #BB8493;
     border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;   
+    width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.058);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .project-item:hover {
@@ -249,8 +261,14 @@ footer {
     background-color: #BB8493;
     color: #704264;
     text-align: center;
-    padding: 30px 0;
+    padding: 30px;
 }
+footer p{
+    margin-top: 2em;
+    font-weight: 500;
+    font-size: 1em;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -284,6 +302,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    body{
+        width: 100.5%;
+    }
     header {
         padding: 20px 0;
         text-align: center;
