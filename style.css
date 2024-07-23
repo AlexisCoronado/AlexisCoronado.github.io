@@ -12,86 +12,90 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 .container {
-    width: 98%;
+    width: 100%;
     margin: 0;  
 }
 .container1 {
-    margin: 2%;  
+    margin: 1.8%;  
+    text-align: center;
+}
+.container1 p {
+  font-size: 1.3sem;
 }
 header, nav, main, footer {
     padding: 20px 0;
     margin: 0;
 }
-
 header {
     background-color: #BB8493;
     color: #49243E;
+    padding: 20px 0;
     text-align: center;
-    padding: 40px 0;
+    height: 30%;
+    margin-top: 2%;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3em;
+    margin-top: 5%;
+    font-size: 3.5em;
 }
 
 header p {
-    font-size: 1.5em;
-    margin-top: 10px;
+    margin: 10px 0 0;
+    font-size: 2em;
 }
 
 nav {
     background-color: #BB8493;
-    text-align: center;
+    color: #49243E;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #49243E;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #704264;
+    font-size: 1.1em;
 }
 
 main {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 section {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
     border-bottom: 2px solid #BB8493;
     padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
-
 .project-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 .project-item {
     background-color: #49243E;
     border: 1px solid #BB8493;
@@ -112,20 +116,6 @@ section h2 {
     height: 200px;
     object-fit: cover;
 }
-
-.project-info {
-    padding: 20px;
-}
-
-.project-info h3 {
-    margin: 0 0 10px;
-    font-size: 1.5em;
-}
-
-.project-info p {
-    margin: 0 0 10px;
-}
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -134,17 +124,23 @@ section h2 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn:hover {
     background-color: #BB8493;
 }
 
-footer {
-    background-color: #BB8493;
-    color: #704264;
-    text-align: center;
-    padding: 20px 0;
+.project-info {
+    padding: 15px;
+}
+.project-info h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #BB8493;
+}
+.project-info p {
+    color: #BB8493;
 }
 
 .containerSkills {
@@ -215,28 +211,6 @@ footer {
     position: absolute;
     right: -14px;
     font-weight: 500;
-    top: -26px;
-    border-radius: 6px;
-    color: #bf97a2;
-    background-color: #704264;
-    z-index: 1;
-}
-
-.tooltip::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    height: 10px;
-    width: 10px;
-    z-index: -1;
-    background-color: #704264;
-    transform: translateX(-50%) rotate(45deg);
-}
-.skillPer .tooltip {
-    position: absolute;
-    right: -14px;
-    font-weight: 500;
     top: -30px;
     border-radius: 6px;
     color: #bf97a2;
@@ -256,113 +230,26 @@ footer {
     transform: translateX(-50%) rotate(45deg);
 }
 
-header {
-    background-color: #BB8493;
-    color: #49243E;
-    padding: 20px 0;
-    text-align: center;
-}
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
-}
-
-nav {
-    background-color: #BB8493;
-    color: #49243E;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #49243E;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-main {
-    padding: 40px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    border-bottom: 2px solid #BB8493;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-    
-.project-gallery {
+.contacticon {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
+    margin-top: 20px;
 }
-
-.project-item {
-    background-color: #49243E;
-    border: 1px solid #BB8493;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-info {
-    padding: 15px;
-}
-
-.project-info h3 {
-    margin-top: 0;
-    font-size: 1.2em;
+.contacticon a {
     color: #BB8493;
+    font-size: 2em;
+    transition: color 0.3s ease;
 }
-
-.project-info p {
-    color: #BB8493;
+.contacticon a:hover {
+    color: #704264;
 }
-
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-top: 10px;
-}
-
 footer {
     background-color: #BB8493;
     color: #704264;
     text-align: center;
-    padding: 10px 0;
+    padding: 30px 0;
 }
 @media (max-width: 768px) {
     header h1 {
@@ -374,7 +261,7 @@ footer {
     }
 
     nav ul {
-        flex-direction:row;
+        flex-direction: row;
         gap: 8px;
     }
 
@@ -390,9 +277,19 @@ footer {
     .containerSkills {
         flex-direction: column;
     }
+
+    .container1 p {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 4%;
+    }
+
     header h1 {
         font-size: 1.8em;
     }
@@ -400,13 +297,9 @@ footer {
     header p {
         font-size: 0.9em;
     }
-
-    nav ul li {
-        margin: 0 8px;
-    }
-
     nav ul li a {
-        font-size: 1em;
+        font-size: 0.9em;
+        padding: 6px;
     }
 
     .project-item {
@@ -417,4 +310,8 @@ footer {
         padding: 8px 16px;
         font-size: 0.9em;
     }
-}   
+
+    .container1 p {
+        font-size: 0.7em;
+    }
+}

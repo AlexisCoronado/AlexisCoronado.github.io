@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexis Coronado</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <div class="container">
             <h1>Alexis Coronado</h1>
             <p>Software Engineering</p>
         </div>
     </header>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#proyects">Proyects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <main>
         <section id="aboutMe" class="container1">
             <h2>About me</h2>
@@ -85,8 +86,8 @@
             </div>
         </section>
 
-        <section id="proyects" class="container1">
-            <h2>Proyects</h2>
+        <section id="projects" class="container1">
+            <h2>Projects</h2>
             <div class="project-gallery">
 
                 <div class="project-item">
@@ -94,7 +95,7 @@
                     <div class="project-info">
                         <h3>Metrology's lab</h3>
                         <p>As a part of an investigation. My team of TRAMVET are creating this Metrology's lab in RecRoom</p>
-                        <a href="" class="btn">View Project</a>
+                        <a href="https://tramvet.github.io" class="btn">View Project</a>
                     </div>
                 </div>
                 
@@ -103,19 +104,31 @@
                     <div class="project-info">
                         <h3>Display Use</h3>
                         <p>A page to practice the display, and how to set stuff with this options</p>
-                        <a href="/projects/project2/project2.html" class="btn">View Project</a>
+                        <a href="projects/project2/project2.html" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/concurr.png" alt="Project">
+                    <div class="project-info">
+                        <h3>concurrent_test</h3>
+                        <p>Some practices of concurrent programming</p>
+                        <a href="https://github.com/AlexisCoronado/concurrent_test.git" class="btn">View Project</a>
                     </div>
                 </div>
             </div>
-            <!-- sin proyectos -->
+
         </section>
 
         <section id="contact" class="container1">
-            <h2>Contacto</h2>
+            <h2>Contact</h2>
             <ul>
                 <li>bryanlexisco@gmail.com</li>
                 <li>+52 4681138107</li>            
             </ul>
+            <section class="contacticon">
+                <a href="https://github.com/AlexisCoronado/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alexis-coronado-01a70530a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </section>
         </section>
     </main>
     <footer>
